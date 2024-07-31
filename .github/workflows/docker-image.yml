@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v3
       - name: build
         run: |
-          docker build . -t ${{ secrets.grant020}}/${{ secrets.intersteller}}:latest
+          docker build . -t ${{ secrets.grant020}}${{ secrets.intersteller}}:latest
       - name: publish
         run: |
           docker login -u ${{ secrets.grant020}} -p ${{ secrets.dckr_pat_p8QqyrfOWskJ79F-NjO-LCO7qJU}}
