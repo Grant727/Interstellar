@@ -15,4 +15,4 @@ jobs:
       - name: publish
         run: |
           docker login -u ${{ secrets.grant020}} -p ${{ secrets.dckr_pat_p8QqyrfOWskJ79F-NjO-LCO7qJU}}
-          docker push ${{ secrets.grant020}}/${{ secrets.intersteller}}:latest
+          docker push ${{ secrets.grant020}}${{ secrets.intersteller}}:latest
